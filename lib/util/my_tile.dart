@@ -8,9 +8,33 @@ class MyTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: 78,
+        height: 90,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8), color: Colors.grey[200]),
+            borderRadius: BorderRadius.circular(8), color: Colors.red),
+        child: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 15.0, ),
+              child: Column(
+                children: [
+                  Container(
+                    height: 25,
+                    width: 180,
+                    color: Colors.grey,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top:15.0,left: 20),
+                    child: Container(
+                      height: 28,
+                      width: 460,
+                      color: Colors.green,
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
